@@ -8,10 +8,6 @@ import time
 
 
 
-
-
-
-
 4567
 class FDataBase:
     def __init__(self, db):
