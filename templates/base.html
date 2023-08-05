@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" , rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body class="index">
+
+<ul>
+    {% for n in context %}
+        <li><a href="{{ n.url }}">{{ n.title }}</a></li>
+    {% endfor %}
+</ul>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
