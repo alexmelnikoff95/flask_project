@@ -1,14 +1,10 @@
 import math
 import sqlite3
 import time
-123
+
+import json
 
 
-
-
-
-
-4567
 class FDataBase:
     def __init__(self, db):
         self.__db = db
@@ -25,7 +21,7 @@ class FDataBase:
         except ValueError as e:
             print('ошибка чтение из бд')
             raise e
-
+        # 123
         return []
 
     def addPost(self, title, text, url):
